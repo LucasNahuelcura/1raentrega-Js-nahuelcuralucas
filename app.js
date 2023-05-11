@@ -161,6 +161,7 @@ let cuotas_usuario = elegir_cuotas();
 let porcentaje_elegido = porcentajes();
 let pago_total_cliente = pagototal();
 let cuanto_por_cuota = cuotas_a_pagar();
+
 alert(" Gracias por comprar en Jugueteria El Rey Dumbo");
 alert("Nombre del solicitante: " + nombre_cliente + "\nNumero de DNI: " + dni + "\nMonto solicitado: " + monto_solicito_cliente + "\nCuotas elegidas: " + cuotas_usuario + "\nPorcentaje a pagar: " + porcentaje_elegido + "\nTotal a pagar: " + pago_total_cliente + "\nTotal a pagar por cuota: " + cuanto_por_cuota);
 alert("¡¡Te esperamos nuevamente en Jugueteria El Rey Dumbo, gracias por su compra!!");
