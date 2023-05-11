@@ -1,11 +1,15 @@
 // Parte principal.
 
+alert("Bienvenidos a la Jugueteria El Rey Dumbo")
+alert("Le pediremos datos principales para realizar la compra")
+
+
 
 //Nombre del cliente.
 function nombre_usuario(){
     let nombre = null
     while(isNaN(nombre) != true){
-        nombre = prompt("diga su nombre y apellido: ");
+        nombre = prompt("Su Nombre y Apellido: ");
         nombre = nombre.toLowerCase();
         if(isNaN(nombre)){
             return nombre
@@ -21,7 +25,7 @@ function nombre_usuario(){
 function dni_usuario(){
     let dni;
     while(isNaN(dni)){
-        dni = parseInt(prompt("diga su dni: "));
+        dni = parseInt(prompt("Su Dni: "));
         if(!isNaN(dni)){
             return dni
         }
@@ -36,7 +40,7 @@ function dni_usuario(){
 function edad_usuario(){
     let edad;
     while(isNaN(edad) || edad <18){
-        edad = parseInt(prompt("diga su edad: "));
+        edad = parseInt(prompt("Su Edad: "));
         if(edad >=18){
             return edad
         }
@@ -71,7 +75,7 @@ function elegir_cuotas(){
     let consulta = null
     let cuotas = 1
     while(cuotas != 3 || cuotas !=6 || cuotas !=12){
-        cuotas = parseInt(prompt("Indicar cantidad de cuotas a pagar. Opciones: 3, 6"))
+        cuotas = parseInt(prompt("Indicar cantidad de cuotas a pagar con intereses. Opciones: 3 y 6 "))
         if(cuotas==3){
             alert("El porcentaje a pagar en 3 cuotas es del 30%")
             consulta = prompt("Desea continuar con la operacion? Si o No.")
@@ -144,12 +148,10 @@ function cuotas_a_pagar(){
 }
 
 
+//variables
+
 // Muestra final compilacion de datos del cliente.
 
-alert("Bienvenidos a la Jugueteria El Rey Dumbo")
-alert("Le pediremos datos principales para realizar la compra")
-
-//VARIABLES DEL PROGRAMA
 
 let nombre_cliente = nombre_usuario();
 let dni = dni_usuario();
